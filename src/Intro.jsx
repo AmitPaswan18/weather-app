@@ -20,8 +20,8 @@ const Intro = () => {
    <WiSunset  size={38} /> Sunset - {new Date(Data.sys.sunset * 1000).toLocaleTimeString()}
   </div>
   <div className="flex items-center text-sm md:text-xl gap-2 justify-center md:gap-4">
-  <BsFillEyeFill size={30} /> Visibility - {Data.visibility/ 1000} km
-   <WiStrongWind  size={30} /> Wind Speed - {Data.wind.speed} km/hr
+  <BsFillEyeFill size={30} /> Visibility - {  Math.round(Data.visibility/ 1000)} km
+   <WiStrongWind  size={30} /> Wind Speed -{ Math.round(Data.wind.speed)} km/hr
   </div>
   <div className="flex items-center text-sm md:text-xl gap-2 justify-center md:gap-4">
   <AiOutlineArrowUp size={33} /> Maximum - { Math.floor(Data.main.temp_max / 10)} &deg;C

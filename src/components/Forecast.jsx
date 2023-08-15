@@ -1,6 +1,8 @@
 import axios from "axios"
 import { useEffect, useContext, useState } from "react"
 import { useData } from "../App"
+import logo from "./github-logo.png"
+import logo2 from "./linkedin.png"
 const Forecast = () => {
     const Data =  useContext(useData)
     const [forcastData , setForecastData] = useState([])
@@ -40,8 +42,8 @@ const Forecast = () => {
     </div>
     <div className="flex justify-center md:font-bold md:text-md  font-sans bg-gradient-to-r text-sm from-slate-500 to-slate-800 border-y h-14 md:h-[60px] w-full items-center gap-2 md:gap-4 p-5">
  <div className="flex md:gap-2">
- <a href="https://github.com/AmitPaswan18"> <img className="h-8 w-8" src="./src/Images/github-logo.png" alt="Logo"  /> </a> 
- <a href="https://www.linkedin.com/in/amit-paswan-04134a23b"> <img className="h-8 w-8" src="./src/Images/linkedin.png" alt=" Logo"  /> </a>
+ <a href="https://github.com/AmitPaswan18"> <img className="h-8 w-8" src={logo} alt="Logo"  /> </a> 
+ <a href="https://www.linkedin.com/in/amit-paswan-04134a23b"> <img className="h-8 w-8" src={logo2} alt=" Logo"  /> </a>
  </div>
  <div>
  Design & Developed by <a href="https://www.linkedin.com/in/amit-paswan-04134a23b" className="hover:text-slate-950"> Amit Paswan</a>

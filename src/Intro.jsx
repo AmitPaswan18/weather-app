@@ -10,7 +10,7 @@ const Intro = () => {
 
   return (
   <>
-  <div className=" flex justify-center p-1 flex-col items-center font-sans px-3 gap-2">
+  <div className=" flex justify-center p-1 flex-col items-center font-sans md:font-bold px-3 gap-2">
   <div className="md:text-5xl text-4xl">{Data.name} {Data.sys.country} </div>
   <div className="md:text-5xl text-4xl p-2">{Math.round(Data.main.temp / 10)}&deg;C</div>
   <div className="text-3xl  ">{Data.weather[0].description} </div>

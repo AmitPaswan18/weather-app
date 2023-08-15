@@ -21,7 +21,7 @@ const Intro = () => {
   </div>
   <div className="flex items-center text-sm md:text-xl gap-2 justify-center md:gap-4">
   <BsFillEyeFill size={30} /> Visibility - {  Math.round(Data.visibility/ 1000)} km
-   <WiStrongWind  size={30} /> Wind Speed -{ Math.round(Data.wind.speed)} km/hr
+   <WiStrongWind  size={30} /> Wind Speed - { Math.round(Data.wind.speed)} km/hr
   </div>
   <div className="flex items-center text-sm md:text-xl gap-2 justify-center md:gap-4">
   <AiOutlineArrowUp size={33} /> Maximum - { Math.floor(Data.main.temp_max / 10)} &deg;C

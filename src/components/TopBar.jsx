@@ -3,7 +3,7 @@
 const TopBar = ({changeCity}) => {
     const data = [
         {id: "1", "title" : "Mumbai"},
-        {id: "2", "title" : "New Delhi"},
+        {id: "2", "title" : "Delhi"},
         {id: "3", "title" : "Lucknow"},
         {id: "4", "title" : "Noida"},
         {id: "5", "title" : "Bengaluru"}

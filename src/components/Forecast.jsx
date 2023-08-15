@@ -38,17 +38,17 @@ const Forecast = () => {
 
   
     </div>
-    <div className="flex justify-center md:font-bold md:text-md  font-sans bg-gradient-to-r text-sm from-slate-500 to-slate-800 border-y h-14 md:h-[60px] w-full items-center gap-2 md:gap-2 p-5">
- <div className="flex">
- <a href="https://github.com/AmitPaswan18"> <img className="h-8 w-7" src="./src/Images/github.svg" alt="Logo"  /> </a> 
- <a href="https://www.linkedin.com/in/amit-paswan-04134a23b"> <img className="h-8 w-8" src="./src/Images/linkedin.svg" alt=" Logo"  /> </a>
+    <div className="flex justify-center md:font-bold md:text-md  font-sans bg-gradient-to-r text-sm from-slate-500 to-slate-800 border-y h-14 md:h-[60px] w-full items-center gap-2 md:gap-4 p-5">
+ <div className="flex md:gap-2">
+ <a href="https://github.com/AmitPaswan18"> <img className="h-8 w-8" src="./src/Images/github-logo.png" alt="Logo"  /> </a> 
+ <a href="https://www.linkedin.com/in/amit-paswan-04134a23b"> <img className="h-8 w-8" src="./src/Images/linkedin.png" alt=" Logo"  /> </a>
  </div>
  <div>
  Design & Developed by <a href="https://www.linkedin.com/in/amit-paswan-04134a23b" className="hover:text-slate-950"> Amit Paswan</a>
  </div>
     </div>
     <div className="text-sm pb-4 font-thin font-sans ">
-     <p> © 2023 Weather, Inc. Weather and sun design are registered trademarks of Weather, Inc. All Rights Reserved.</p>
+     <p className="px-2"> © 2023 Weather, Inc. Weather and sun design are registered trademarks of Weather, Inc. All Rights Reserved.</p>
       </div>
 </div>
   

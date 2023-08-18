@@ -44,11 +44,11 @@ function handlebg(id){
   }
  
   else if( id >= 801 && id < 900){
-   setBg("bg-[url('./Images/Cloudy.webp')]")
+   setBg("bg-[url('./Images/clearSky.webp')]")
   }
  
   else{
-   setBg("bg-[url('./Images/clearSky.webp')]")
+   setBg("bg-[url('./Images/Cloudy.webp')]")
   }
  
   

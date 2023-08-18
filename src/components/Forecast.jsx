@@ -22,10 +22,10 @@ const Forecast = () => {
   return (
 <div className="flex flex-col text-center justify-center items-center md:pt-4 w-full">
     <h1 className="flex w-full py-3 justify-center text-xl my-4 md:text-4xl md:p-5  border-y shadow-md shadow-gray-400 bg-gradient-to-r via-blue-500 text-white">Next  Five Days Forecast</h1>
-    <div key={crypto.randomUUID()}  className="grid  md:grid-cols-8 grid-cols-3  w-full  gap-5">
+    <div key={crypto.randomUUID()}  className="grid px-2 md:grid-cols-8 grid-cols-3  w-full  md:gap-5 gap-4">
         {forcastData.map((item)=> (
             <>
-            <div key={crypto.randomUUID()}  className=" text-white shadow-md hover:scale-110 transition ease-out cursor-pointer bg-blue-500 hover:ease-in duration-150 gap-1 mx-2 shadow-slate-300 flex flex-col text-sm md:text-lg p-1 rounded-md h-full justify-center text-center items-center border">
+            <div key={crypto.randomUUID()}  className=" text-white shadow-md hover:scale-110 transition ease-out cursor-pointer bg-blue-500 hover:ease-in duration-150 gap-1 md:mx-2 mx-1 shadow-slate-300 flex flex-col text-sm md:text-lg md:p-1 rounded-md h-full justify-center text-center items-center border">
            <div key={crypto.randomUUID()} className="md:max-h-[30%]">
            <p key={crypto.randomUUID()}  >{item.dt_txt.split(" ")[0]}</p>
             <p key={crypto.randomUUID()}  >{item.dt_txt.split(" ")[1]}</p>

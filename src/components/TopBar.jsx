@@ -20,7 +20,7 @@ const TopBar = ({changeCity}) => {
    <>
   <div className="flex gap-3 justify-center font-thin h-12  md:text-2xl text-white md:h-14 items-center shadow-sm shadow-slate-200 md:py-8 py-4 border-b ">
   <TiWeatherPartlySunny color="white" size={40} className=""/>
-  <h1 className="pt-3"> Weather Forecast Inc.</h1>
+  <h1 className="pt-3 "> Weather Forecast Inc.</h1>
   </div>
    <div className="flex justify-around items-center p-4 text-white md:text-2xl  ">
    { data.map((city) => (

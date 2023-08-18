@@ -57,7 +57,7 @@ function handlebg(id){
   return (
     <> 
      {Data.length === 0? <h1 className=" md:w-full h-[100vh] md:text-xl flex justify-center items-center bg-cover bg-[url('./bgImg.webp')]"><p className="animate-waving-hand border  text-sm  p-4 rounded-xl text-white md:w-fit w-[50%] bg-slate-800">Loading Weather Please wait...</p></h1>: <div className="w-full">
-     <> <div className={`md:bg-cover bg-auto text-white ${bg}`}>
+     <> <div className={`bg-cover text-white ${bg}`}>
      <TopBar changeCity={setCity}/> <InputBar changeCity={setCity} error={err}/> 
      <useData.Provider value={Data}>
       <Intro/>

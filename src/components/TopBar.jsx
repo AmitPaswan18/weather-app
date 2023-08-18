@@ -22,7 +22,7 @@ const TopBar = ({changeCity}) => {
    <h1 className="flex justify-center font-thin  md:text-2xl text-white md:h-14 items-center shadow-sm shadow-slate-200 md:py-8 py-4 border-b ">Top Searches</h1>
    <div className="flex justify-around items-center p-4 text-white md:text-2xl  ">
    { data.map((city) => (
-<button className="border-1 text-sm md:text-2xl rounded-md p-1 hover:text-gray-900" value={city.title}   onClick={handleClick} key={city.id}>{city.title}</button>
+<button className="border-1 hover:scale-125 transition duration-500 text-sm md:text-2xl rounded-md p-1 hover:text-gray-900" value={city.title}   onClick={handleClick} key={city.id}>{city.title}</button>
 ))} 
    </div>
    </>

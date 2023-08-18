@@ -1,8 +1,10 @@
 import axios from "axios"
 import { useEffect, useContext, useState } from "react"
 import { useData } from "../App"
-import logo from "./github-logo.png"
-import logo2 from "./linkedin.png"
+// import logo from "./github-logo.png"
+// import logo2 from "./linkedin.png"
+import { BsGithub } from "react-icons/bs"
+import { BsLinkedin } from "react-icons/bs"
 const Forecast = () => {
     const Data =  useContext(useData)
     const [forcastData , setForecastData] = useState([])
@@ -18,12 +20,12 @@ const Forecast = () => {
 })
       }, [Data.coord.lat, Data.coord.lon])
   return (
-<div className="flex  flex-col text-center justify-center items-center pt-4 gap-5">
-    <h1 className="flex w-full justify-center text-2xl p-3 md:text-4xl md:p-5 text-white border-y shadow-md shadow-gray-400">Next  Five Days Forecast</h1>
-    <div  className="grid md:grid-cols-8 grid-cols-3  w-full  gap-5">
+<div className="flex flex-col text-center justify-center items-center md:pt-4 w-full">
+    <h1 className="flex w-full py-3 justify-center text-xl my-4 md:text-4xl md:p-5  border-y shadow-md shadow-gray-400 bg-gradient-to-r via-blue-500 text-white">Next  Five Days Forecast</h1>
+    <div key={crypto.randomUUID()}  className="grid  md:grid-cols-8 grid-cols-3  w-full  gap-5">
         {forcastData.map((item)=> (
             <>
-            <div key={crypto.randomUUID()}  className="shadow-md hover:scale-110 transition duration-500  mx-2 shadow-slate-300 flex flex-col text-sm md:text-lg p-1 rounded-md h-full justify-center text-center items-center border">
+            <div key={crypto.randomUUID()}  className=" text-white shadow-md hover:scale-110 transition ease-out cursor-pointer bg-blue-500 hover:ease-in duration-150 gap-1 mx-2 shadow-slate-300 flex flex-col text-sm md:text-lg p-1 rounded-md h-full justify-center text-center items-center border">
            <div key={crypto.randomUUID()} className="md:max-h-[30%]">
            <p key={crypto.randomUUID()}  >{item.dt_txt.split(" ")[0]}</p>
             <p key={crypto.randomUUID()}  >{item.dt_txt.split(" ")[1]}</p>
@@ -40,17 +42,17 @@ const Forecast = () => {
 
   
     </div>
-    <div className="flex justify-center md:font-bold md:text-md  font-sans bg-gradient-to-r text-sm from-slate-500 to-slate-800 border-y h-12 md:h-[60px] w-full items-center gap-2 md:gap-4 p-5">
- <div className="flex md:gap-2">
- <a href="https://github.com/AmitPaswan18"> <img className="h-8 w-8" src={logo} alt="Logo" /> </a> 
- <a href="https://www.linkedin.com/in/amit-paswan-04134a23b"> <img className="h-8 w-8" src={logo2} alt=" Logo"  /> </a>
+    <div className="flex justify-center mt-4 md:font-bold md:text-md text-sm font-sans md:bg-gradient-to-r from-cyan-300 via-blue-500 to-purple-600  border-y h-12 md:h-[60px] w-full items-center gap-2 md:gap-4 p-5 ">
+ <div className="flex gap-2">
+ <a href="https://github.com/AmitPaswan18"> <BsGithub size={24} color="white"/>  </a> 
+ <a href="https://www.linkedin.com/in/amit-paswan-04134a23b">  <BsLinkedin size={24} color="white"/> </a>
  </div>
- <div>
- Design & Developed by <a href="https://www.linkedin.com/in/amit-paswan-04134a23b" className="hover:text-slate-950"> Amit Paswan</a>
+ <div className="text-white">
+ Design & Developed by <a href="https://www.linkedin.com/in/amit-paswan-04134a23b" className="hover:text-gray-300"> Amit Paswan</a>
  </div>
     </div>
-    <div className="text-sm pb-4 font-thin font-sans ">
-     <p className="px-2"> © 2023 Weather Forecast, Inc. Weather and sun design are registered trademarks of Weather, Inc. All Rights Reserved.</p>
+    <div className="text-sm text-white p-2 font-thin font-sans w-full md:bg-gradient-to-r from-cyan-300 via-blue-500 to-purple-600">
+     <p className="p-2"> © 2023 Weather Forecast, Inc. Weather and sun design are registered trademarks of Weather, Inc. All Rights Reserved.</p>
       </div>
 </div>
   

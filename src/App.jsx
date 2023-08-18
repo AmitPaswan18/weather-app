@@ -64,7 +64,7 @@ function handlebg(id){
      </useData.Provider>
      </div>
      <useData.Provider value={Data}>
-     <div className="bg-gradient-to-r from-slate-900 to-slate-700 text-white"> <Forecast/></div>
+     <div className="bg-blue-500 text-black"> <Forecast/></div>
      </useData.Provider>
       </>
      </div> 

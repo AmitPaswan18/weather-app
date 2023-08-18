@@ -32,7 +32,7 @@ const InputBar = ({changeCity, error}) => {
    <form className="w-full flex justify-center" onSubmit={handleSubmit}>
 
    <input className="h-[55px] md:w-[30%] w-[50%] border-2 rounded-xl my-1 text-black p-2 ml-3" onChange={handleChange} required value={input}  type="text"  />
-   <button className='ml-4 mb-2 ' type="submit"> <ImSearch size={30} /> </button>
+   <button className='ml-4 mb-2 ' type="submit"> <ImSearch size={40} className='mt-4' /> </button>
    </form>
     </div>
   )

@@ -18,7 +18,7 @@ const TopBar = ({changeCity}) => {
 
   return (
    <>
-  <div className="flex gap-3 justify-center font-thin  md:text-2xl text-white md:h-14 items-center shadow-sm shadow-slate-200 md:py-8 py-4 border-b ">
+  <div className="flex gap-3 justify-center font-thin h-12  md:text-2xl text-white md:h-14 items-center shadow-sm shadow-slate-200 md:py-8 py-4 border-b ">
   <TiWeatherPartlySunny color="white" size={40}/>
   <h1 className="pt-3"> Weather Forecast Inc.</h1>
   </div>

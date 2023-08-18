@@ -48,7 +48,7 @@ function handlebg(id){
   }
  
   else{
-   setBg("bg-[url('./Images/clearsky.webp')]")
+   setBg("bg-[url('./Images/cloud.webp')]")
   }
  
   

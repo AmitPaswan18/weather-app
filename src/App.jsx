@@ -14,7 +14,9 @@ function App() {
   const [err, seterr] = useState(false);
 
   useEffect(() => {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=8a4270ed934e7f46c75a035970db047c`;
+    const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
+
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     axios
       .get(url)
       .then((response) => {
